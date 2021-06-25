@@ -13,7 +13,7 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${props.city}&ap
 axios.get(apiUrl).then(handleResponse);   
 
 return(
-    <h2>Hello From Weather</h2>
+    <h2>Hello From Kansas City</h2>
 
 )
 
