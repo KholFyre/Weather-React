@@ -1,15 +1,71 @@
 import './App.css';
 import Weather from "./Weather";
 
-function App() {
+
+
+
+export default function App() {
   return (
     <div className="App">
-      <header className="App-header">
-       <h1>Hello Everyone</h1>
-       <Weather city="kansas city" />
-      </header>
+      <div className="container">
+        <div class="row align-items-center">
+          <div class="col">
+            <form class="form-inline" id="search-form">
+              <div class="form-group mb-2"></div>
+              <div class="form-group mx-sm-3 mb-2">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Enter a City"
+                  id="city-input"
+                  autocomplete="off"
+                />
+              </div>
+              <div class="col">
+                <button
+                  type="button"
+                  class="btn btn-outline-primary"
+                  id="searchButton"
+                >
+                  Search
+                </button>
+              </div>
+            </form>
+          </div>
+        </div>
+        <h3 id="city">New York</h3>
+        <h4>
+          Last Updated: Friday, June 4, 2021 22:03{" "}
+          <span id="currentDateAndTime"></span>
+        </h4>
+        <div>
+          <img src="" class="current-weather-icon" id="currentWeatherIcon" />
+        </div>
+
+        <span class="current-temperature">
+          <h1 class="current-temperature" id="current-temperature">
+            {" "}
+            88{" "}
+          </h1>
+        </span>
+        <span class="temperature-units"> °F | °C </span>
+
+        <br />
+        <div class="row" id="current-forecast">
+          <div class="col-4" id="weatherDescription">
+            Current Weather: Sunny
+          </div>
+          <div class="col-4">
+            Wind: 5 <span id="windSpeed"></span> mph
+          </div>
+          <div class="col-4">
+            Humidity: 25% <span id="humidity"></span> %
+          </div>
+        </div>
+        <hr />
+
+        <div class="container-weekly" id="forecast"></div>
+      </div>
     </div>
   );
 }
-
-export default App;

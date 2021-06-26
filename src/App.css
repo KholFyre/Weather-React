@@ -1,38 +1,104 @@
 .App {
+  font-family: sans-serif;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: whitesmoke;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  background: rgb(127, 201, 230);
+  background-size: cover;
+  border-radius: 10px;
+  box-shadow: 5px 10px 10px 5px grey;
+  padding: 20px;
+  width: 450px;
+  text-align: center;
+  color: white;
+  margin-top: 15px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.today-max-and-min-temperatures {
+  color: white;
+  font-size: 15px;
+}
+span.temperature-units {
+  margin-bottom: 25px;
+  color: white;
+}
+a.active {
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+a:hover {
+  color: #037cfe;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#current-temperature {
+  text-align: center;
+  padding-left: 35px;
+}
+
+#current-forecast {
+  color: white;
+  font-size: 15px;
+}
+
+#hourlyForecast {
+  color: white;
+  font-size: 15px;
+}
+#img-by-hourly {
+  font-size: small;
+}
+#daily-high {
+  color: white;
+  font-weight: bold;
+  font-size: 15px;
+}
+#daily-low {
+  color: slategrey;
+  font-size: 15px;
+}
+#day-of-week {
+  font-size: 15px;
+  color: white;
+  text-align: left;
+}
+#daily-weather-icon {
+  text-align: left;
+}
+
+#weatherDescription {
+  text-transform: capitalize;
+  font-size: 15px;
+  color: white;
+}
+
+h1 {
+  color: white;
+  font-size: 60px;
+  display: inline;
+  text-align: end;
+}
+
+h3 {
+  color: white;
+  padding-top: 20px;
+}
+
+h4 {
+  color: white;
+  font-size: 15px;
+}
+hr {
+  color: white;
+}
+
+.Footer {
+  text-align: center;
+  font-size: 11px;
+  color: black;
+  margin: 60px 0px 16px;
 }
