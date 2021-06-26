@@ -2,7 +2,9 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import Footer from "./Footer"
+import Footer from "./Footer";
+import Weather from "./Weather";
+import Search from "./Search";
 import reportWebVitals from './reportWebVitals';
 
 ReactDOM.render(

@@ -1,5 +1,5 @@
 import './App.css';
-import Weather from "./Weather";
+import Search from "./Search";
 
 
 
@@ -33,11 +33,8 @@ export default function App() {
             </form>
           </div>
         </div>
-        <h3 id="city">New York</h3>
-        <h4>
-          Last Updated: Friday, June 4, 2021 22:03{" "}
-          <span id="currentDateAndTime"></span>
-        </h4>
+        <h3 id="city">Search For A City</h3>
+        <h4>Last Updated: <span id="currentDateAndTime"></span></h4>
         <div>
           <img src="" class="current-weather-icon" id="currentWeatherIcon" />
         </div>
